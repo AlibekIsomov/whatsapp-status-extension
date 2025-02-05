@@ -89,7 +89,7 @@ async function updateStatus(context) {
     let status = "Idle in VS Code";
     if (editor) {
         const fileName = path.basename(editor.document.fileName);
-        status = `Editing ${fileName} in VS Code`;
+        status = `Working On ${fileName}`;
     }
     statusBarItem.text = `WhatsApp: ${status}`;
     statusBarItem.show();
